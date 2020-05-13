@@ -8,72 +8,332 @@
     <title>¡Hola! Conoce nuestro portafolio</title>
 
     <style type="text/css">
-        /*
+		/*
 	@CSS DEFAULT - RESET
 	*/
-        p {
-            margin: 10px 0;
-            padding: 0;
-        }
+		p {
+			margin: 10px 0;
+			padding: 0;
+		}
 
-        table {
-            border-collapse: collapse;
-        }
+		table {
+			border-collapse: collapse;
+		}
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
 
-        img,
-        a img {
-            border: 0;
-            height: auto;
-            outline: none;
-            text-decoration: none;
-        }
+		img,
+		a img {
+			border: 0;
+			height: auto;
+			outline: none;
+			text-decoration: none;
+		}
 
-        body,
-        #bodyTabla,
-        #bodyCelda {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-        }
+		body,
+		#bodyTabla,
+		#bodyCelda {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
 
-        p,
-        a,
-        li,
-        td,
-        blockquote {
-            mso-line-height-rule: exactly;
-        }
+		p,
+		a,
+		li,
+		td,
+		blockquote {
+			mso-line-height-rule: exactly;
+		}
 
-        a[href^=tel],
-        a[href^=sms] {
-            color: inherit;
-            cursor: default;
-            text-decoration: none;
-        }
+		a[href^=tel],
+		a[href^=sms] {
+			color: inherit;
+			cursor: default;
+			text-decoration: none;
+		}
 
-        p,
-        a,
-        li,
-        td,
-        body,
-        table,
-        blockquote {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-    </style>
+		p,
+		a,
+		li,
+		td,
+		body,
+		table,
+		blockquote {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		.contenedor-plantilla {
+			max-width: 600px !important;
+		}
+
+		.contenedor-textos {
+			word-break: break-word;
+		}
+
+		.contenedor-textos img {
+			height: auto !important;
+		}
+
+		body,
+		#bodyTabla {
+			background-color: #66006b;
+		}
+
+		#bodyCelda {
+			border-top: 0;
+		}
+
+		h1 {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 26px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: normal;
+			text-align: left;
+		}
+
+		h2 {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: normal;
+			text-align: left;
+		}
+
+		h3 {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: normal;
+			text-align: left;
+		}
+
+		h4 {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 125%;
+			letter-spacing: normal;
+			text-align: left;
+		}
+
+		#preheader {
+			background-color: #fffaff;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-top: 0;
+			border-bottom: 0;
+			padding-top: 9px;
+			padding-bottom: 9px;
+		}
+
+		#preheader .contenedor-textos,
+		#preheader .contenedor-textos p {
+			color: #656565;
+			font-family: Helvetica;
+			font-size: 12px;
+			line-height: 150%;
+			text-align: left;
+		}
+
+		#preheader .contenedor-textos a,
+		#preheader .contenedor-textos p a {
+			color: #656565;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#header {
+			background-color: #FFFFFF;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-top: 0;
+			border-bottom: 0;
+			padding-top: 9px;
+			padding-bottom: 0;
+		}
+
+		#header .contenedor-textos,
+		#header .contenedor-textos p {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: left;
+		}
+
+		#header .contenedor-textos a,
+		#header .contenedor-textos p a {
+			color: #007C89;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#body {
+			background-color: #FFFFFF;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-top: 0;
+			border-bottom: 0;
+			padding-top: 9px;
+			padding-bottom: 9px;
+		}
+
+		#body .contenedor-textos,
+		#body .contenedor-textos p {
+			color: #202020;
+			font-family: Helvetica;
+			font-size: 16px;
+			line-height: 150%;
+			text-align: left;
+		}
+
+		#body .contenedor-textos a,
+		#body .contenedor-textos p a {
+			color: #007C89;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		#footer {
+			background-color: #660066;
+			background-image: none;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			border-top: 0;
+			border-bottom: 0;
+			padding-top: 9px;
+			padding-bottom: 9px;
+		}
+
+		#footer .contenedor-textos,
+		#footer .contenedor-textos p {
+			color: #656565;
+			font-family: Helvetica;
+			font-size: 12px;
+			line-height: 150%;
+			text-align: center;
+		}
+
+		#footer .contenedor-textos a,
+		#footer .contenedor-textos p a {
+			color: #656565;
+			font-weight: normal;
+			text-decoration: underline;
+		}
+
+		@media only screen and (min-width:768px) {
+			.contenedor-plantilla {
+				width: 600px !important;
+			}
+
+		}
+
+		@media only screen and (max-width: 480px) {
+
+			body,
+			table,
+			td,
+			p,
+			a,
+			li,
+			blockquote {
+				-webkit-text-size-adjust: none !important;
+			}
+
+			body {
+				width: 100% !important;
+				min-width: 100% !important;
+			}
+
+			#bodyCelda {
+				padding-top: 10px !important;
+			}
+
+
+			.contenedor-textos {
+				padding-top: 9px !important;
+			}
+
+			h1 {
+				font-size: 22px !important;
+				line-height: 125% !important;
+			}
+
+			h2 {
+				font-size: 20px !important;
+				line-height: 125% !important;
+			}
+
+			h3 {
+				font-size: 18px !important;
+				line-height: 125% !important;
+			}
+
+			h4 {
+				font-size: 16px !important;
+				line-height: 150% !important;
+			}
+
+			#preheader {
+				display: block !important;
+			}
+
+			#preheader .contenedor-textos,
+			#preheader .contenedor-textos p {
+				font-size: 14px !important;
+				line-height: 150% !important;
+			}
+
+			#header .contenedor-textos,
+			#header .contenedor-textos p {
+				font-size: 16px !important;
+				line-height: 150% !important;
+			}
+
+			#body .contenedor-textos,
+			#body .contenedor-textos p {
+				font-size: 16px !important;
+				line-height: 150% !important;
+			}
+
+			#footer .contenedor-textos,
+			#footer .contenedor-textos p {
+				font-size: 14px !important;
+				line-height: 150% !important;
+			}
+
+		}
+	</style>
 </head>
 
 <body>
